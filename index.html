@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label class="logo">SONA GYM</label>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="pxfuel.jpg" style="width:100%;">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="805233.jpg" style="width:100%;">
+          </div>
+
+        <div class="mySlides fade">
+          <img src="pxfuel-2 2.jpg" style="width:100%;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="young-fitness-man-studio.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="608038 2.jpg" style="width:100%">
+        </div>
+        
+        </div>
+   
+    <section></section>
+    <div id="about" class="container">
+        <div class="left-text">
+            <h2 class="heading">ABOUT US</h2>
+            <p class="subheading">“We are a friendly team of professionals, winners of international bodybuilding competitions, with an individual approach to each client.”</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" style="background-image: url(karsten-winegeart-0Wra5YYVQJE-unsplash.jpg);" ></div>
+            <div class="box col-2" style="background-image: url(jonathan-borba-zfPOelmDc-M-unsplash.jpg);" ></div>
+            <div class="box" style="background-image: url(anastase-maragos-FP7cfYPPUKM-unsplash.jpg);" ></div>
+            <div class="box row-2" style="background-image: url(alonso-reyes-0HlI76m4jxU-unsplash.jpg);" ></div>
+            <div class="box col-2" style="background-image: url(scott-webb-xwMlVSqP20U-unsplash.jpg);" ></div>
+            <div class="box" style="background-image: url(attractive-girls-sportswear-gym-communicate-sports-life-fitness-atmosphere.jpg);" ></div>
+            <div class="box col-2" style="background-image: url(Dumbbells-568094543df78ccc15a5b493.jpeg);" ></div>
+        </div>
+    </div>
+    <div id="contact" class="container2">
+      <div class="left-text">
+        <h2 class="heading">CONTACT US</h2>
+       <h3>
+        <p class="subheading">“COME TRAIN WITH US.”</p>
+      </div>
+      </h3>
+      <br>
+      <div class="gallery">
+          <div class="box row-2 box2">
+            <div class="myicon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="heading2">EMAIL</h3>
+            <p class="paragraph">sonafitness@gmail.com</p>
+          </div>
+          <div class="box row-2 box2">
+            <div class="myicon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3 class="heading2">PHONE</h3>
+            <p class="paragraph">098492 39239</p>
+          </div>
+          <div class="box row-2 box2">
+            <div class="myicon">
+              <i class="fas fa-home myicon"></i>
+            </div>
+            <h3 class="heading2">ADDRESS</h3>
+            <p class="paragraph">Bank Colony, Khammam, Telangana 507003</p>
+          </div>
+      </div>
+    </div>
+    <div class="container3">
+      <div style="text-align: center;">
+        <h2 class="heading">Hours of Operation.</h2>
+        <div>
+          <pre class="mytime">Sunday              Closed</pre>
+          <pre class="mytime">Monday      5–9 am, 5–8 pm</pre>
+          <pre class="mytime">Tuesday     5–9 am, 5–8 pm</pre>
+          <pre class="mytime">Wednesday   5–9 am, 5–8 pm</pre>
+          <pre class="mytime">Thursday    5–9 am, 5–8 pm</pre>
+          <pre class="mytime">Friday      5–9 am, 5–8 pm</pre>
+          <pre class="mytime">Saturday    5–9 am, 5–8 pm</pre>
+        </div>
+      </div>
+      <br>
+      <marquee class="marqu">Design & Developed > SaiKumar Yadav || 7416979927 || mudumunthalasaikumar04@gmail.com</marquee>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000);
+        }
+        </script>  
+        
+      
+</body>
+</html>

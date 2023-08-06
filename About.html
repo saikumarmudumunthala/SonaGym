@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SONA GYM</label>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section></section>
+    <div class="container">
+        <div class="left-text">
+            <h2 class="heading">ABOUT US</h2>
+            <p class="subheading">“We are a friendly team of professionals, winners of international bodybuilding competitions, with an individual approach to each client.”</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" style="background-image: url(karsten-winegeart-0Wra5YYVQJE-unsplash.jpg);" ></div>
+            <div class="box col-2" style="background-image: url(jonathan-borba-zfPOelmDc-M-unsplash.jpg);" ></div>
+            <div class="box" style="background-image: url(anastase-maragos-FP7cfYPPUKM-unsplash.jpg);" ></div>
+            <div class="box row-2" style="background-image: url(alonso-reyes-0HlI76m4jxU-unsplash.jpg);" ></div>
+            <div class="box col-2" style="background-image: url(scott-webb-xwMlVSqP20U-unsplash.jpg);" ></div>
+            <div class="box" style="background-image: url(attractive-girls-sportswear-gym-communicate-sports-life-fitness-atmosphere.jpg);" ></div>
+            <div class="box col-2" style="background-image: url(Dumbbells-568094543df78ccc15a5b493.jpeg);" ></div>
+        </div>
+    </div>
+<marquee class="marqu">Design & Developed > SaiKumar Yadav || 7416979927 || mudumunthalasaikumar04@gmail.com</marquee>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000);
+        }
+        </script>      
+</body>
+</html>
